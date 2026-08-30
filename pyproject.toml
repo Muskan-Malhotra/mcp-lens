@@ -1,0 +1,24 @@
+[project]
+name = "mcp-lens"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muskan-Malhotra", email = "muskanmalhotra.official@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=2.1.1",
+]
+
+[project.scripts]
+mcp-lens = "mcp_lens:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
