@@ -28,6 +28,7 @@ async def main():
             trace = await trace_tool_call(
                 "search_customer",
                 {"name": "Alice"},
+                client=session
             )
 
             print(f"Trace: {trace}")
